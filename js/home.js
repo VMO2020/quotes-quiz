@@ -1,1 +1,1 @@
-console.log('app.js is working!');
+console.log('home.js is working!');

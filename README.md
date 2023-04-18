@@ -2,6 +2,15 @@
 
 Quotes quiz app
 
+ daniel
+
+
+
+
+
+
+## This is Daniel
+
 tunde
 ## This is tunde
 
@@ -10,3 +19,4 @@ main
 
 ## This is chidera
 chidera
+ main

@@ -1,6 +1,8 @@
 # quotes-quiz
+
 Quotes quiz app
 
+ daniel
 
 
 
@@ -8,3 +10,13 @@ Quotes quiz app
 
 
 ## This is Daniel
+
+tunde
+## This is tunde
+
+## This is victor
+main
+
+## This is chidera
+chidera
+ main

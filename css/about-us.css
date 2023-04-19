@@ -85,13 +85,83 @@ a {
 	background-color: aliceblue;
 }
 .daniel-container {
-	background-color: rgb(134, 160, 28);
+ daniel
+  
+
 }
-.tunde-container {
+.daniel-container {
+  background-color: green;
+}
+.daniel-container img {
+  height: 180px;
+  width: 100%;
+  margin: 0;
+  }
+.text-container p {
+  font-size: clamp(1.2em, 2vw, 1.8em);
+  margin: 1em auto;
+ 
+}
+.text-container span {
+font-weight: 700;
+
+
+	background-color: rgb(134, 160, 28);
+ main
+}
+.tunde-container {tunde
+  background-color: rgb(200, 47, 126);
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.user-info li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.user-info strong {
+  font-weight: bold;
+}
+
+.user-bio {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #777;
+}
+
 	background-color: rgb(200, 47, 126);
 }
 
 /* victor */
+main
 .victor-container {
 	position: relative;
 	display: flex;

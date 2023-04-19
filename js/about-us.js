@@ -1,1 +1,1 @@
-console.log("home.js is working!");
+console.log('about-us.js is working!');

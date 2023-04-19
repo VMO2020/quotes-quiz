@@ -1,5 +1,10 @@
 /* Variables */
 :root {
+	--main: blue;
+	--dark: black;
+	--light: white;
+	--alert: orange;
+	--html: rgb(28, 28, 28);
   --main: lightblue;
   --dark: black;
   --light: white;

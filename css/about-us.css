@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-	--main: red;
+	--main: blue;
 	--dark: black;
 	--light: white;
 	--alert: orange;
@@ -163,7 +163,46 @@ font-weight: 700;
 /* victor */
 main
 .victor-container {
-	background-color: rgb(39, 26, 123);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	width: 300px;
+	height: 450px;
+	margin: 0;
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--dark);
+}
+
+.victor-container img {
+	position: absolute;
+	top: 1rem;
+	left: 100px;
+	width: 40%;
+	border-radius: 50%;
+	/* border: 2px solid red; */
+}
+
+.victor-container p {
+	font-size: clamp(1.2rem, 3vw, 2.8rem);
+	line-height: 1.6;
+}
+
+.victor-container .text-container {
+	margin-top: 200px;
+}
+
+.victor-container p span {
+	font-weight: 700;
+	font-style: italic;
+}
+
+.info {
+	position: absolute;
+	bottom: 1rem;
+	left: 100px;
+	color: var(--alert);
 }
 
 /* Footer */

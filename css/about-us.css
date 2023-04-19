@@ -1,90 +1,91 @@
 /* Variables */
 :root {
-  --main: red;
-  --dark: black;
-  --light: white;
-  --alert: orange;
-  --html: rgb(28, 28, 28);
+	--main: red;
+	--dark: black;
+	--light: white;
+	--alert: orange;
+	--html: rgb(28, 28, 28);
 }
 
 /* General */
 html {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem; /* 16px */
-  line-height: 1.6;
-  margin: 0 auto;
-  scroll-behavior: smooth;
-  background-color: var(--html);
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem; /* 16px */
+	line-height: 1.6;
+	margin: 0 auto;
+	scroll-behavior: smooth;
+	background-color: var(--html);
 }
 
 body {
-  min-width: 320px;
-  max-width: 1280px;
-  min-height: 100svh;
-  margin: 0 auto;
-  background-color: var(--light);
+	min-width: 320px;
+	max-width: 1280px;
+	min-height: 100svh;
+	margin: 0 auto;
+	background-color: var(--light);
 }
 
 a {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  margin-left: 1em;
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	margin-left: 1em;
 }
 
 /* Header */
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 5svh;
-  padding: 0.7rem 1rem;
-  color: var(--light);
-  background-color: var(--main);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 5svh;
+	padding: 0.7rem 1rem;
+	color: var(--light);
+	background-color: var(--main);
 }
 .nav-container {
-  display: flex;
+	display: flex;
 }
 
 .nav-container span {
-  margin-left: 1em;
-  color: var(--alert);
+	margin-left: 1em;
+	color: var(--alert);
 }
 
 /* Main */
 .main-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
 }
 
 .main-container h2 {
-  margin: 2rem;
+	margin: 2rem;
 }
 
 .cards-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 
 .card-container {
-  width: 300px;
-  height: 450px;
+	width: 300px;
+	height: 450px;
 
-  border: 1px solid var(--dark);
+	border: 1px solid var(--dark);
 }
 
 /* Team Work */
 .sandrine-container {
-  background-color: aliceblue;
+	background-color: aliceblue;
 }
 .daniel-container {
+ daniel
   
 
 }
@@ -104,26 +105,31 @@ a {
 .text-container span {
 font-weight: 700;
 
+
+	background-color: rgb(134, 160, 28);
+ main
 }
 .tunde-container {
-  background-color: rgb(200, 47, 126);
+	background-color: rgb(200, 47, 126);
 }
+
+/* victor */
 .victor-container {
-  background-color: rgb(39, 26, 123);
+	background-color: rgb(39, 26, 123);
 }
 
 /* Footer */
 .footer-container {
-  width: 100%;
-  min-height: 5vh;
-  padding: 0.5rem 0;
-  color: var(--main);
-  background-color: var(--main);
-  margin-top: 2rem;
+	width: 100%;
+	min-height: 5vh;
+	padding: 0.5rem 0;
+	color: var(--main);
+	background-color: var(--main);
+	margin-top: 2rem;
 }
 
 p.footer {
-  text-align: center;
-  color: var(--light);
-  line-height: 3em;
+	text-align: center;
+	color: var(--light);
+	line-height: 3em;
 }

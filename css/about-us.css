@@ -85,7 +85,29 @@ a {
 	background-color: aliceblue;
 }
 .daniel-container {
+ daniel
+  
+
+}
+.daniel-container {
+  background-color: green;
+}
+.daniel-container img {
+  height: 180px;
+  width: 100%;
+  margin: 0;
+  }
+.text-container p {
+  font-size: clamp(1.2em, 2vw, 1.8em);
+  margin: 1em auto;
+ 
+}
+.text-container span {
+font-weight: 700;
+
+
 	background-color: rgb(134, 160, 28);
+ main
 }
 .tunde-container {
 	background-color: rgb(200, 47, 126);

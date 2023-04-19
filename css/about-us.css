@@ -8,6 +8,10 @@
 }
 
 /* General */
+* {
+	box-sizing: border-box;
+}
+
 html {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1rem; /* 16px */
@@ -35,11 +39,11 @@ a {
 
 /* Header */
 .header-container {
+	font-size: clamp(1.2rem, 2vw, 2rem);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	min-height: 5svh;
-	padding: 0.7rem 1rem;
+	padding: 1.3rem;
 	color: var(--light);
 	background-color: var(--main);
 }
@@ -52,13 +56,17 @@ a {
 	color: var(--alert);
 }
 
+#dark {
+	cursor: pointer;
+}
+
 /* Main */
 .main-container {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
 	align-items: center;
+	min-height: 80vh;
 }
 
 .main-container h2 {
@@ -73,119 +81,103 @@ a {
 	gap: 1rem;
 }
 
-.card-container {
+.card {
 	width: 300px;
 	height: 450px;
-
 	border: 1px solid var(--dark);
 }
 
-/* Team Work */
+/**************** Team Work ****************/
+/* chidera */
 .sandrine-container {
 	background-color: aliceblue;
 }
-.daniel-container {
- daniel
-  
 
-}
+/* daniel */
 .daniel-container {
-  background-color: green;
+	border: 1px solid var(--dark);
 }
+
 .daniel-container img {
-  height: 180px;
-  width: 100%;
-  margin: 0;
-  }
-.text-container p {
-  font-size: clamp(1.2em, 2vw, 1.8em);
-  margin: 1em auto;
- 
-}
-.text-container span {
-font-weight: 700;
-
-
-	background-color: rgb(134, 160, 28);
- main
-}
-.tunde-container {tunde
-  background-color: rgb(200, 47, 126);
-  margin: 0 auto;
+	height: 180px;
+	width: 100%;
+	margin: 0;
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+.daniel-container .text-container p {
+	font-size: clamp(1.2em, 2vw, 1.8em);
+	margin: 1em auto;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.daniel-container .text-container span {
+	font-weight: 700;
 }
 
-.card-container img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-.user-info {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-.user-info li {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.user-info strong {
-  font-weight: bold;
-}
-
-.user-bio {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #777;
-}
-
+/* tunde */
+.tunde-container {
 	background-color: rgb(200, 47, 126);
+	border-radius: 8px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+}
+
+.tunde-container .card-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.tunde-container .card-container img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.tunde-container .card-container .user-info {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.tunde-container .card-container .user-info li {
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.tunde-container .card-container .user-info strong {
+	font-weight: bold;
+}
+
+.tunde-container .card-container .user-bio {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #777;
 }
 
 /* victor */
-main
 .victor-container {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-
 	align-items: center;
-	width: 300px;
-	height: 450px;
 	margin: 0;
 	padding: 0.5rem 1rem;
-	border: 1px solid var(--dark);
 }
 
 .victor-container img {
 	position: absolute;
 	top: 1rem;
-	left: 100px;
+	left: 50%;
 	width: 40%;
 	border-radius: 50%;
-	/* border: 2px solid red; */
+	transform: translateX(-50%);
 }
 
 .victor-container p {
-	font-size: clamp(1.2rem, 3vw, 2.8rem);
+	font-size: 1.2rem;
 	line-height: 1.6;
 }
 
@@ -198,11 +190,12 @@ main
 	font-style: italic;
 }
 
-.info {
+.victor-container .info-btn {
 	position: absolute;
 	bottom: 1rem;
-	left: 100px;
+	right: 1rem;
 	color: var(--alert);
+	cursor: pointer;
 }
 
 /* Footer */
@@ -216,7 +209,8 @@ main
 }
 
 p.footer {
+	font-size: clamp(1.2rem, 2vw, 2rem);
 	text-align: center;
 	color: var(--light);
-	line-height: 3em;
+	line-height: 2em;
 }

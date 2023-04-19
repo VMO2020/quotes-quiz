@@ -84,7 +84,8 @@ a {
 .card {
 	width: 300px;
 	height: 450px;
-	border: 1px solid var(--dark);
+	perspective: 1000px;
+	cursor: pointer;
 }
 
 /**************** Team Work ****************/
@@ -159,12 +160,49 @@ a {
 
 /* victor */
 .victor-container {
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 0;
+	border-radius: 8px;
+}
+
+.victor-container .card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
 	padding: 0.5rem 1rem;
+	background-color: lightblue;
+	border-radius: 8px;
+	text-align: center;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+}
+.victor-container .front-face {
+	backface-visibility: hidden;
+}
+
+.victor-container .back-face {
+	backface-visibility: hidden;
+	position: absolute;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 1em;
+	color: var(--light);
+	border-radius: 8px;
+	background-color: var(--main);
+	transform: rotateY(180deg);
+}
+
+.victor-container:hover .card-inner {
+	transform: rotateY(-180deg);
+}
+
+.victor-container:hover .card-inner .back-face {
+	transform: rotateY(180deg);
 }
 
 .victor-container img {
@@ -176,9 +214,27 @@ a {
 	transform: translateX(-50%);
 }
 
+.victor-container h3 {
+	font-size: 2rem;
+	line-height: 1.6;
+	margin-bottom: 2rem;
+}
+
 .victor-container p {
 	font-size: 1.2rem;
 	line-height: 1.6;
+}
+
+.victor-container a {
+	margin: 0;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color: var(--alert);
+	margin-top: 2rem;
+	cursor: pointer;
+	border: 2px solid var(--alert);
+	border-radius: 5px;
+	padding: 0.3rem 1rem;
 }
 
 .victor-container .text-container {
@@ -188,14 +244,6 @@ a {
 .victor-container p span {
 	font-weight: 700;
 	font-style: italic;
-}
-
-.victor-container .info-btn {
-	position: absolute;
-	bottom: 1rem;
-	right: 1rem;
-	color: var(--alert);
-	cursor: pointer;
 }
 
 /* Footer */

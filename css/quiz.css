@@ -150,8 +150,62 @@ button[type='submit']:hover {
 	background-color: #3e8e41;
 }
 
+/* victor */
 .victor-container {
-	background-color: rgb(170, 0, 255);
+	/* background-color: blue; */
+}
+
+.victor-container .questions-container {
+	display: grid;
+	grid-template-columns: (1fr, 1fr, 1fr);
+	grid-template-rows: (1fr, 1fr, 1fr);
+	gap: 0.5rem;
+}
+
+.victor-container .title {
+	/* background-color: lightblue; */
+
+	grid-column-start: 1;
+	grid-column-end: 3;
+
+	grid-row-start: 1;
+	grid-row-end: 2;
+
+	height: 2rem;
+}
+
+.victor-container .quote-container {
+	background-color: yellowgreen;
+
+	grid-column-start: 1;
+	grid-column-end: 3;
+
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	height: 5rem;
+}
+
+.victor-container .answers-container {
+	background-color: grey;
+
+	grid-column-start: 1;
+	grid-column-end: 2;
+
+	grid-row-start: 3;
+	grid-row-end: 4;
+
+	height: 8rem;
+}
+
+.victor-container .button-container {
+	background-color: violet;
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+	grid-row-start: 3;
+	grid-row-end: 4;
 }
 
 /* Footer */

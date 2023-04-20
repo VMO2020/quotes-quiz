@@ -126,8 +126,33 @@ a {
 
 /* daniel */
 .container-daniel {
-	/* code */
+	width: 100%;
+	display: flex;
 }
+
+.container-daniel .hero-container img {
+	width: 100%;
+	margin: 0;
+	justify-content: center;
+}
+
+.container-daniel .content-container h2  {
+background-image: linear-gradient(to bottom,skyblue,blue,skyblue);
+border-radius: 2px black;
+text-align: center;
+font-weight: 700;
+font-size: 2rem;
+padding: 10px;
+border-radius: 1.5rem;
+	
+ }
+ .container-daniel .content-container p {
+	margin: 10px;
+	padding: 10px;
+	font-size: 1.2rem;
+	line-height: 1.8;
+	margin-bottom: 50px;
+ }
 
 /* victor */
 .container-victor {

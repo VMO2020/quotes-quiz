@@ -80,6 +80,7 @@ a:hover {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	/* justify-content: center; */
 	align-items: center;
 	min-height: 85vh;
 	padding: 0 2rem;
@@ -108,9 +109,169 @@ a:hover {
 	width: 80%;
 	min-height: 300px;
 	margin: 1rem auto;
-	border: 3px solid var(--main);
-	border-radius: 1rem;
-	box-shadow: 5px 5px 6px grey;
+	border: 1px solid var(--dark);
+}
+
+/* Team Work */
+.sandrine-container {
+	background-color: aqua;
+}
+/* Daniel*/
+
+.daniel-container {
+	background-color: whitesmoke;
+}
+
+.daniel-container .questions-container {
+	display: grid;
+	grid-template-columns: (1fr, 1fr, 1fr);
+	grid-template-rows: (1fr, 1fr, 1fr);
+	gap: 0.5rem;
+	padding: 1rem;
+}
+
+.daniel-container .title {
+	/* background-color: lightblue; */
+
+	grid-column-start: 1;
+	grid-column-end: 3;
+
+	grid-row-start: 1;
+	grid-row-end: 2;
+
+	height: 2rem;
+
+	text-align: center;
+	font-weight: 700;
+	margin: 0.5em auto;
+}
+
+.daniel-container .quote-container {
+	/* background-color: yellowgreen; */
+
+	grid-column-start: 1;
+	grid-column-end: 3;
+
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	height: 5rem;
+
+	text-align: center;
+	padding: 0.5em 1em;
+	font-size: 1.2rem;
+	line-height: 1.6;
+}
+
+.daniel-container .answers-container {
+	background-color: grey;
+
+	grid-column-start: 1;
+	grid-column-end: 2;
+
+	grid-row-start: 3;
+	grid-row-end: 4;
+
+	height: 9rem;
+
+	padding: 0.8em 1em;
+}
+
+.daniel-container .answers-container li,
+.daniel-container .answers-container legend {
+	/* margin: 0.5em 0; */
+}
+.daniel-container .button-container {
+	/* background-color: violet; */
+
+	position: relative;
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+.daniel-container .button-container button {
+	position: absolute;
+	font-size: 1rem;
+	text-transform: uppercase;
+	bottom: 0.5rem;
+	right: 0.5rem;
+	padding: 0.3em 1.5em;
+	color: var(--light);
+	background-color: var(--main);
+	border-radius: 0.5em;
+}
+
+.tunde-container {
+	background-color: whitesmoke;
+	padding: 30px;
+}
+
+.tunde-container .hero-container {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.tunde-container .content-container {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.tunde-container h2 {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.tunde-container h3 {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+/* .tunde-container li {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.tunde-container form {
+	max-width: 700px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.tunde-container .quiz-question {
+	margin-bottom: 20px;
+	align-items: start;
+}
+
+.tunde-container ul {
+	text-align: justify;
+}
+
+.tunde-container label {
+	cursor: pointer;
+}
+
+.tunde-container button[type='next'] {
+	background-color: #4caf50;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.tunde-container button[type='next']:hover {
+	background-color: #3e8e41;
 }
 
 /* victor */
@@ -123,7 +284,7 @@ a:hover {
 	grid-template-columns: (1fr, 1fr, 1fr);
 	grid-template-rows: (1fr, 1fr, 1fr);
 	gap: 0.5rem;
-	padding: 1.5rem;
+	padding: 1rem;
 }
 
 .victor-container .title {
@@ -151,18 +312,17 @@ a:hover {
 	grid-row-start: 2;
 	grid-row-end: 3;
 
-	height: auto;
+	height: 5rem;
+
 	text-align: center;
 	padding: 0.5em 1em;
-	font-size: 2rem;
-	font-style: italic;
+	font-size: 1.2rem;
 	line-height: 1.6;
 	color: var(--dark);
 }
 
 .victor-container .answers-container {
-	background-color: rgb(200, 200, 200);
-	border-radius: 0.5rem;
+	background-color: grey;
 
 	grid-column-start: 1;
 	grid-column-end: 2;
@@ -170,13 +330,9 @@ a:hover {
 	grid-row-start: 3;
 	grid-row-end: 4;
 
-	min-height: 9rem;
+	height: 9rem;
 
 	padding: 0.8em 1em;
-}
-
-.victor-container .answers-container legend {
-	font-weight: 700;
 }
 
 .victor-container .answers-container li,
@@ -200,8 +356,8 @@ a:hover {
 	font-size: 1rem;
 	text-transform: uppercase;
 	bottom: 0.5rem;
-	right: 0;
-	padding: 0.3em 4em;
+	right: 0.5rem;
+	padding: 0.3em 1.5em;
 	color: var(--light);
 	background-color: var(--main);
 	border-radius: 0.5em;

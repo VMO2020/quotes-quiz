@@ -96,23 +96,98 @@ a {
 
 /* daniel */
 .daniel-container {
-	border: 1px solid var(--dark);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	border-radius: 8px;
+}
+
+.daniel-container .card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0.5rem 1rem;
+	background-image: linear-gradient(to bottom,blue,lightblue,skyblue,blue);
+	border-radius: 8px;
+	text-align: center;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+}
+.daniel-container .front-face {
+	backface-visibility: hidden;
+}
+
+.daniel-container .back-face {
+	backface-visibility: hidden;
+	position: absolute;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 1em;
+	color: white;
+	font-weight: 700;
+	border-radius: 8px;
+	background-image:linear-gradient(to bottom,blue, red,blue);
+	
+transform: rotateY(180deg);
+}
+
+.daniel-container:hover .card-inner {
+	transform: rotateY(-180deg);
+}
+
+.daniel-container:hover .card-inner .back-face {
+	transform: rotateY(180deg);
 }
 
 .daniel-container img {
-	height: 180px;
-	width: 100%;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	box-shadow: 2px 2px 5px rgb(0, 0, 0.400);
+	box-sizing: border-box;
+	margin: 10px;
+}
+
+.daniel-container h3 {
+	font-size: 2rem;
+	line-height: 1.6;
+	margin-bottom: 2rem;
+}
+
+.daniel-container p {	
+	font-size: 1.2rem;
+	line-height: 1.6;
+}
+
+.daniel-container a {
 	margin: 0;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color: black;
+	margin-top: 2rem;
+	cursor: pointer;
+	border: 2px solid black;
+	background-image: linear-gradient(white,red,white);
+	border-radius: 5px;
+	padding: 0.3rem 1rem;
 }
 
+.daniel-container .text-container {
+	margin-top: 1px;
+}
 .daniel-container .text-container p {
-	font-size: clamp(1.2em, 2vw, 1.8em);
-	margin: 1em auto;
+	font-size: 1rem;
 }
 
-.daniel-container .text-container span {
+.daniel-container p span {
 	font-weight: 700;
+	font-style: italic;
 }
+
 
 /* tunde */
 .tunde-container {

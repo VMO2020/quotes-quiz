@@ -39,6 +39,8 @@ a {
 
 /* Header */
 .header-container {
+	position: fixed;
+	width: 100%;
 	font-size: clamp(1.2rem, 2vw, 2rem);
 	display: flex;
 	justify-content: space-between;
@@ -46,6 +48,7 @@ a {
 	padding: 1.3rem;
 	color: var(--light);
 	background-color: var(--main);
+	z-index: 100;
 }
 .nav-container {
 	display: flex;
@@ -70,7 +73,10 @@ a {
 }
 
 .main-container h2 {
-	margin: 2rem;
+	margin: 6rem;
+	font-weight: 700;
+	font-size: 2rem;
+	color: var(--main);
 }
 
 .cards-container {

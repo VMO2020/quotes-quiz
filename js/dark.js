@@ -16,12 +16,10 @@ function darkMode() {
 	if (flag === true) {
 		darkButton.textContent = '☀️';
 		mainContainer.style.backgroundColor = 'black';
-		// logo.style.backgroundColor = 'transparent';
 		mainContainer.style.color = 'white';
 	} else {
 		darkButton.textContent = '🌒';
 		mainContainer.style.backgroundColor = 'white';
-		// logo.style.backgroundColor = 'white';
 		mainContainer.style.color = 'black';
 	}
 	flag = !flag;

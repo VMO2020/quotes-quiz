@@ -40,6 +40,8 @@ a {
 
 /* Header */
 .header-container {
+	position: fixed;
+	width: 100%;
 	font-size: clamp(1.2rem, 2vw, 2rem);
 	display: flex;
 	justify-content: space-between;
@@ -47,6 +49,7 @@ a {
 	padding: 1.3rem;
 	color: var(--light);
 	background-color: var(--main);
+	z-index: 100;
 }
 .nav-container {
 	display: flex;
@@ -78,6 +81,7 @@ a {
 	align-items: center;
 	width: 100%;
 	margin: 1rem auto;
+	margin-top: 6rem;
 	border: 1px solid var(--dark);
 }
 
@@ -136,23 +140,22 @@ a {
 	justify-content: center;
 }
 
-.container-daniel .content-container h2  {
-background-image: linear-gradient(to bottom,skyblue,blue,skyblue);
-border-radius: 2px black;
-text-align: center;
-font-weight: 700;
-font-size: 2rem;
-padding: 10px;
-border-radius: 1.5rem;
-	
- }
- .container-daniel .content-container p {
+.container-daniel .content-container h2 {
+	background-image: linear-gradient(to bottom, skyblue, blue, skyblue);
+	border-radius: 2px black;
+	text-align: center;
+	font-weight: 700;
+	font-size: 2rem;
+	padding: 10px;
+	border-radius: 1.5rem;
+}
+.container-daniel .content-container p {
 	margin: 10px;
 	padding: 10px;
 	font-size: 1.2rem;
 	line-height: 1.8;
 	margin-bottom: 50px;
- }
+}
 
 /* victor */
 .container-victor {

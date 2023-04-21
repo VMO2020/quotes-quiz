@@ -113,22 +113,22 @@ formValue.addEventListener('submit', function (event) {
 });
 
 // Quiz render function
-function renderFunction(question) {
-	// number.innerHTML = number;
+function renderFunction(i, question) {
+	number.innerHTML = i;
 
 	quote.innerHTML = question.quote;
 
-	// answer1Label.innerHTML = authors[0];
-	// answer1.setAttribute('value', authors[0]);
+	answer1Label.innerHTML = question.authors[0];
+	answer1.setAttribute('value', question.authors[0]);
 
-	// answer2Label.innerHTML = authors[1];
-	// answer2.setAttribute('value', authors[1]);
+	answer2Label.innerHTML = question.authors[1];
+	answer2.setAttribute('value', question.authors[1]);
 
-	// answer3Label.innerHTML = authors[2];
-	// answer3.setAttribute('value', authors[2]);
+	answer3Label.innerHTML = question.authors[2];
+	answer3.setAttribute('value', question.authors[2]);
 
-	// answer4Label.innerHTML = authors[3];
-	// answer4.setAttribute('value', authors[3]);
+	answer4Label.innerHTML = question.authors[3];
+	answer4.setAttribute('value', question.authors[3]);
 }
 
-renderFunction(questions[0]);
+renderFunction(1, questions[1]);

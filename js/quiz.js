@@ -88,15 +88,39 @@ generateQuestions();
 const number = document.getElementById('title');
 const quote = document.getElementById('quote');
 const answer1Label = document.getElementById('answer1-label');
+const answer1 = document.getElementById('answer1');
 const answer2Label = document.getElementById('answer2-label');
+const answer2 = document.getElementById('answer2');
 const answer3Label = document.getElementById('answer3-label');
+const answer3 = document.getElementById('answer3');
 const answer4Label = document.getElementById('answer4-label');
-const nextBTN = document.getElementById('next-btn');
+const answer4 = document.getElementById('answer4');
 
-number.innerHTML = '3';
+const submitButton = document.getElementById('next-btn');
+
+const formValue = document.getElementById('form');
+
+// Test
+number.innerHTML = '2';
 quote.innerHTML = 'New quote';
-answer1Label.innerHTML = 'Author 1';
-answer2Label.innerHTML = 'Author 2';
-answer3Label.innerHTML = 'Author 3';
-answer4Label.innerHTML = 'Author 4';
-nextBTN.innerHTML = 'Submit';
+submitButton.innerHTML = 'Submit';
+
+answer1Label.innerHTML = 'Author Tunde';
+answer1.setAttribute('value', 'Tunde');
+
+answer2Label.innerHTML = 'Author Victor';
+answer2.setAttribute('value', 'author Victor');
+
+answer3Label.innerHTML = 'Winston Churchill';
+answer3.setAttribute('value', 'Winston Churchill');
+
+answer4Label.innerHTML = 'Author 4..';
+answer4.setAttribute('value', 'author4');
+
+// Quiz function
+formValue.addEventListener('submit', function (event) {
+	event.preventDefault(); // Stop refresh page`
+	const name = event.target.author.value;
+	// const name2 = event.target.author;
+	console.log(name);
+});

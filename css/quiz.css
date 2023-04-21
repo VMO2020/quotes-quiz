@@ -162,11 +162,12 @@ a:hover {
 }
 
 .victor-container .answers-container {
+	position: relative;
 	background-color: rgb(200, 200, 200);
 	border-radius: 0.5rem;
 
 	grid-column-start: 1;
-	grid-column-end: 2;
+	grid-column-end: 3;
 
 	grid-row-start: 3;
 	grid-row-end: 4;
@@ -186,9 +187,6 @@ a:hover {
 }
 .victor-container .button-container {
 	/* background-color: violet; */
-
-	position: relative;
-
 	grid-column-start: 2;
 	grid-column-end: 3;
 
@@ -201,7 +199,7 @@ a:hover {
 	font-size: 1rem;
 	text-transform: uppercase;
 	bottom: 0.5rem;
-	right: 0;
+	right: 0.5rem;
 	padding: 0.3em 4em;
 	color: var(--light);
 	background-color: var(--main);

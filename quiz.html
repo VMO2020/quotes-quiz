@@ -46,7 +46,7 @@
 			<section class="container victor-container">
 				<div class="questions-container">
 					<div class="title">
-						<p>Question  <span id="title">1</span> </p>
+						<p>Question  <span id="title"></span> </p>
 					</div>
 
 					<div class="quote-container">
@@ -58,9 +58,9 @@
 						</p>
 					</div>
 
-					<div class="answers-container">
+					<form class="answers-container" id="form">
 						<legend>Select an author for this quote:</legend>
-
+						
 						<div>
 							<input
 								type="radio"
@@ -68,7 +68,9 @@
 								name="author"
 								value="Albert Einstein"
 							/>
-							<label id="answer1-label" for="answer1"></label>
+							<label id="answer1-label" for="answer1">
+								
+							</label>
 						</div>
 
 						<div>
@@ -100,12 +102,13 @@
 							/>
 							<label id="answer4-label" for="answer4"></label>
 						</div>
+						<div class="button-container">
+							<button id="next-btn" type="submit">Next</button>
+						</div>
 					</div>
+					</form>
 
-					<div class="button-container">
-						<button id="next-btn">Next</button>
-					</div>
-				</div>
+					
 			</section>
 		</main>
 		<footer class="footer-container">

@@ -9,7 +9,7 @@ let questions = [];
 const Question = function (quote, author, authors) {
 	this.quote = quote;
 	this.author = author;
-	this.authors = [];
+	this.authors = authors;
 };
 
 // Generate Questions
@@ -101,26 +101,34 @@ const submitButton = document.getElementById('next-btn');
 const formValue = document.getElementById('form');
 
 // Test
-number.innerHTML = '2';
-quote.innerHTML = 'New quote';
+
 submitButton.innerHTML = 'Submit';
 
-answer1Label.innerHTML = 'Author Tunde';
-answer1.setAttribute('value', 'Tunde');
-
-answer2Label.innerHTML = 'Author Victor';
-answer2.setAttribute('value', 'author Victor');
-
-answer3Label.innerHTML = 'Winston Churchill';
-answer3.setAttribute('value', 'Winston Churchill');
-
-answer4Label.innerHTML = 'Author 4..';
-answer4.setAttribute('value', 'author4');
-
-// Quiz function
+// Submit function
 formValue.addEventListener('submit', function (event) {
 	event.preventDefault(); // Stop refresh page`
 	const name = event.target.author.value;
 	// const name2 = event.target.author;
 	console.log(name);
 });
+
+// Quiz render function
+function renderFunction(question) {
+	// number.innerHTML = number;
+
+	quote.innerHTML = question.quote;
+
+	// answer1Label.innerHTML = authors[0];
+	// answer1.setAttribute('value', authors[0]);
+
+	// answer2Label.innerHTML = authors[1];
+	// answer2.setAttribute('value', authors[1]);
+
+	// answer3Label.innerHTML = authors[2];
+	// answer3.setAttribute('value', authors[2]);
+
+	// answer4Label.innerHTML = authors[3];
+	// answer4.setAttribute('value', authors[3]);
+}
+
+renderFunction(questions[0]);

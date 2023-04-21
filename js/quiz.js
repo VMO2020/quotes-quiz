@@ -57,7 +57,7 @@ function generateQuestions() {
 	);
 	let question9 = new Question(
 		'If everything is under control, you are going too slow!.',
-		'Winston Churchill',
+		'Mario Andretti',
 		['Thomas Edison', 'Mario Andretti', 'Will Smith', 'Winston Churchill']
 	);
 	let question10 = new Question(
@@ -82,3 +82,21 @@ function generateQuestions() {
 
 // **************************************** Initialize ****************************************
 generateQuestions();
+
+// ******************************************** DOM ********************************************
+// Selectors
+const number = document.getElementById('title');
+const quote = document.getElementById('quote');
+const answer1Label = document.getElementById('answer1-label');
+const answer2Label = document.getElementById('answer2-label');
+const answer3Label = document.getElementById('answer3-label');
+const answer4Label = document.getElementById('answer4-label');
+const nextBTN = document.getElementById('next-btn');
+
+number.innerHTML = '3';
+quote.innerHTML = 'New quote';
+answer1Label.innerHTML = 'Author 1';
+answer2Label.innerHTML = 'Author 2';
+answer3Label.innerHTML = 'Author 3';
+answer4Label.innerHTML = 'Author 4';
+nextBTN.innerHTML = 'Submit';

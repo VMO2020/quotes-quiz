@@ -80,7 +80,6 @@ function generateQuestions() {
 	// console.log(questions);
 }
 
-// **************************************** Initialize ****************************************
 generateQuestions();
 
 // ******************************************** DOM ********************************************
@@ -100,6 +99,9 @@ const answer4 = document.getElementById('answer4');
 const submitButton = document.getElementById('next-btn');
 const startButton = document.getElementById('start-btn');
 
+const table = document.getElementById('results-table');
+const tableHeadTitle = document.getElementById('table-head');
+
 const formValue = document.getElementById('form');
 
 // ***************************************** Functions *****************************************
@@ -107,29 +109,21 @@ let count = 1;
 let maxQuestions = questions.length;
 let answers = [];
 let answersCheck = [];
-
-// New Attempt
-startButton.addEventListener('click', function () {
-	count = 1;
-	mainQuiz();
-	container.classList.remove('hidden');
-	answers = [];
-	answersCheck = [];
-	submitButton.innerHTML = 'Next';
-});
+let total = 0;
 
 // Submit function
 formValue.addEventListener('submit', function (event) {
 	event.preventDefault(); // Stop refresh page`
 	const name = event.target.author.value;
 	if (!name) {
-		console.log('You need to select an author');
+		alert('You need to select an author');
 	} else {
 		// console.log(name);
 		answers.push(name);
 		// Check answer
 		if (name === questions[count - 1].author) {
 			answersCheck.push(1);
+			total = total + 1;
 		} else {
 			answersCheck.push(0);
 		}
@@ -145,8 +139,11 @@ formValue.addEventListener('submit', function (event) {
 			console.log('You finished!');
 			console.log(answers);
 			console.log(answersCheck);
+			console.log(total);
 			container.classList.add('hidden');
 			startButton.classList.remove('hidden');
+			tableHead();
+			// tableRows();
 		}
 	}
 });
@@ -179,3 +176,25 @@ function mainQuiz() {
 }
 
 mainQuiz();
+
+// New Attempt
+startButton.addEventListener('click', function () {
+	count = 1;
+	mainQuiz();
+	container.classList.remove('hidden');
+	answers = [];
+	answersCheck = [];
+	submitButton.innerHTML = 'Next';
+});
+
+// ******************************  TABLE  ******************************
+
+const tableTitles = ['Quote', 'Answer', 'Check', 'Points'];
+
+function tableHead() {
+	for (let i = 0; i < tableTitles.length; i++) {
+		const title = document.createElement('th');
+		title.textContent = tableTitles[i];
+		tableHeadTitle.appendChild(title);
+	}
+}

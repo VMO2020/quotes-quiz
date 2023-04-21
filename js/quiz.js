@@ -77,7 +77,7 @@ function generateQuestions() {
 		question9,
 		question10
 	);
-	console.log(questions);
+	// console.log(questions);
 }
 
 // **************************************** Initialize ****************************************
@@ -85,6 +85,7 @@ generateQuestions();
 
 // ******************************************** DOM ********************************************
 // Selectors
+const container = document.getElementById('victor-container');
 const number = document.getElementById('title');
 const quote = document.getElementById('quote');
 const answer1Label = document.getElementById('answer1-label');
@@ -97,23 +98,63 @@ const answer4Label = document.getElementById('answer4-label');
 const answer4 = document.getElementById('answer4');
 
 const submitButton = document.getElementById('next-btn');
+const startButton = document.getElementById('start-btn');
 
 const formValue = document.getElementById('form');
 
-// Test
+// ***************************************** Functions *****************************************
+let count = 1;
+let maxQuestions = questions.length;
+let answers = [];
+let answersCheck = [];
 
-submitButton.innerHTML = 'Submit';
+// New Attempt
+startButton.addEventListener('click', function () {
+	count = 1;
+	mainQuiz();
+	container.classList.remove('hidden');
+	answers = [];
+	answersCheck = [];
+	submitButton.innerHTML = 'Next';
+});
 
 // Submit function
 formValue.addEventListener('submit', function (event) {
 	event.preventDefault(); // Stop refresh page`
 	const name = event.target.author.value;
-	// const name2 = event.target.author;
-	console.log(name);
+	if (!name) {
+		console.log('You need to select an author');
+	} else {
+		// console.log(name);
+		answers.push(name);
+		// Check answer
+		if (name === questions[count - 1].author) {
+			answersCheck.push(1);
+		} else {
+			answersCheck.push(0);
+		}
+		// Check last question
+		if (count === maxQuestions - 1) {
+			submitButton.innerHTML = 'Submit';
+		}
+		// Check question number
+		if (count < maxQuestions) {
+			count = count + 1;
+			mainQuiz();
+		} else {
+			console.log('You finished!');
+			console.log(answers);
+			console.log(answersCheck);
+			container.classList.add('hidden');
+			startButton.classList.remove('hidden');
+		}
+	}
 });
 
 // Quiz render function
 function renderFunction(i, question) {
+	form.reset();
+
 	number.innerHTML = i;
 
 	quote.innerHTML = question.quote;
@@ -131,4 +172,10 @@ function renderFunction(i, question) {
 	answer4.setAttribute('value', question.authors[3]);
 }
 
-renderFunction(1, questions[1]);
+// Quiz main function
+function mainQuiz() {
+	renderFunction(count, questions[count - 1]);
+	startButton.classList.add('hidden');
+}
+
+mainQuiz();

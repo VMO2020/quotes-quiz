@@ -119,6 +119,10 @@ a:hover {
 	background-color: whitesmoke;
 }
 
+.hidden {
+	display: none;
+}
+
 .victor-container .questions-container {
 	display: grid;
 	grid-template-columns: (1fr, 1fr, 1fr);
@@ -201,6 +205,16 @@ a:hover {
 	bottom: 0.5rem;
 	right: 0.5rem;
 	padding: 0.3em 4em;
+	color: var(--light);
+	background-color: var(--main);
+	border-radius: 0.5em;
+}
+
+#start-btn {
+	font-size: 1rem;
+	margin-top: 2rem;
+	text-transform: uppercase;
+	padding: 0.5em 4em;
 	color: var(--light);
 	background-color: var(--main);
 	border-radius: 0.5em;

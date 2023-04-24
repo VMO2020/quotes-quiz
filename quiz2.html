@@ -17,10 +17,7 @@
   </head>
   <body>
     <header class="header-container">
-      <!-- <span class="logo">Logo</span> -->
-      <div class="logo-image">
-        <img src="./images-tunde/IMG_3494 3.PNG" alt="Logo" height="80/80" />
-      </div>
+      <span class="logo">Logo</span>
       <nav>
         <ul class="nav-container">
           <li><a href="index.html">Home</a></li>
@@ -33,7 +30,7 @@
     </header>
     <main class="main-container">
       <div class="text-container">
-        <h2>QUIZ 2: Question 1-10</h2>
+        <h2>QUIZ 2</h2>
         <p>
           Are you a fan of inspiring or thought-provoking quotes? Put your
 						knowledge to the test with Quotes Quiz! This fun and engaging quiz
@@ -47,95 +44,49 @@
       </div>
       
       <!-- tunde -->
-       <section class="container tunde-container" id="tunde-container">
-				<div class="tunde-questions-container">
-					<div class="title">
-						<p>Question  <span id="title"></span> </p>
-					</div>
-
-					<div class="tunde-quote-container">
-						<p>
-							"
-							<span id="quote">quote</span>
-							</span>
-							"
-						</p>
-					</div>
-
-					<form class="tunde-answers-container" id="form">
-						<legend>Select an author for this quote:</legend>
-						
-						<div>
-							<input
-								type="radio"
-								id="answer1"
-								name="author"
-								value="Winston Churchill"
-							/>
-							<label id="answer1-label" for="answer1">
-								
-							</label>
-						</div>
-
-						<div>
-							<input
-								type="radio"
-								id="answer2"
-								name="author"
-								value="Christian D. Larson"
-							/>
-							<label id="answer2-label" for="answer2"></label>
-						</div>
-
-						<div>
-							<input
-								type="radio"
-								id="answer3"
-								name="author"
-								value="Steve Jobs"
-							/>
-							<label id="answer3-label" for="answer3"></label>
-						</div>
-
-						<div>
-							<input
-								type="radio"
-								id="answer4"
-								name="author"
-								value="Abraham Lincoln"
-							/>
-							<label id="answer4-label" for="answer4"></label>
-						</div>
-						<div class="tunde-button-container">
-							<button id="next-btn" type="submit">Next</button>
-						</div>
-            <div class="previous-button-container">
-              <button id="previous-btn" type="submit">Previous</button>
-            </div>
-					</div>
-					</form>		
-			</section>
-
-      <!-- Results Table -->
-			<table class="tunde-results-table" id="tunde-results-table">
-				<thead>
-					<tr id="table-head"></tr>
-				</thead>
-				<tbody id="table-body"></tbody>
-				<tfoot>
-					<tr id="table-foot"></tr>
-				</tfoot>
-			</table>
-			<!-- New Attempt -->
-			<div class="tunde-button-new-attempt">
-				<!-- <button id="tunde-start-btn">New Attempt</button> -->
-			</div>
-
+       <section class="container tunde-container"><TUNDE>
+        <div class="hero-container"></div>
+        <div class="content-container">
+    <h2> <strong>Quotes Quiz</strong></h2>
+    <form id="quiz-form">
+      <div class="quiz-question">
+        <h3>Question 1:</h3>
+        <p id="quote">"Success is not final, failure is not fatal: it is the courage to continue that counts." Who said this?</p>
+        <br>
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="question1" value="a" />
+              Winston Churchill
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="question1" value="b" />
+              Steve Jobs
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="question1" value="c" />
+              Albert Einstein
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="quiz-question">
+      <!-- more quiz questions -->
+      <div class="next-container">
+        <button type="next">Next</button>
+      </div>
+    </form>
+  </div>
+      </section>
+      
     </main>
-    </main>
-		<footer class="footer-container">
-			<p class="footer">&copy 2023 team & Made with &hearts;</p>
-		</footer>
+    <footer class="footer-container">
+      <p class="footer">&copy 2023 team</p>
+    </footer>
     <script src="./js/dark.js"></script>
     <script src="./js/quiz2.js"></script>
   </body>

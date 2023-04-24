@@ -1,282 +1,267 @@
 /* Variables */
 :root {
-  --html: rgb(28, 28, 28);
-  --main: blue;
-  --dark: black;
-  --light: white;
-  --alert: orange;
-  --html: rgb(28, 28, 28);
-  --table: grey;
+	--html: rgb(28, 28, 28);
+	--main: blue;
+	--dark: black;
+	--light: white;
+	--alert: orange;
+	--html: rgb(28, 28, 28);
+	--table: grey;
 }
 
 /* General */
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem; /* 16px */
-  line-height: 1.6;
-  margin: 0 auto;
-  scroll-behavior: smooth;
-  background-color: var(--html);
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem; /* 16px */
+	line-height: 1.6;
+	margin: 0 auto;
+	scroll-behavior: smooth;
+	background-color: var(--html);
 }
 
 body {
-  min-width: 320px;
-  max-width: 1280px;
-  min-height: 100svh;
-  margin: 0 auto;
-  background-color: var(--light);
-}
-
-.logo-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0d6efd;
-  padding: 20px;
-}
-
-.logo-image img {
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 20px #fff;
+	min-width: 320px;
+	max-width: 1280px;
+	min-height: 100svh;
+	margin: 0 auto;
+	background-color: var(--light);
 }
 
 a {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
 
-  margin-left: 0.5em;
-  padding: 0.2em 1em;
-  border: 2px solid var(--light);
-  border-radius: 0.5em;
+	margin-left: 0.5em;
+	padding: 0.2em 1em;
+	border: 2px solid var(--light);
+	border-radius: 0.5em;
 }
 
 a:hover {
-  border: 2px solid var(--alert);
-  box-shadow: 3px 3px 4px grey;
+	border: 2px solid var(--alert);
+	box-shadow: 3px 3px 4px grey;
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
 button {
-  font-weight: 700;
-  cursor: pointer;
+	font-weight: 700;
+	cursor: pointer;
 }
 
 button:hover {
-  box-shadow: 5px 5px 6px grey;
+	box-shadow: 5px 5px 6px grey;
 }
 
 /* Header */
 .header-container {
-  position: fixed;
-  width: 100%;
-  max-width: 1280px;
-  font-size: clamp(1.2rem, 2vw, 2rem);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.3rem;
-  color: var(--light);
-  background-color: var(--main);
-  z-index: 100;
+	position: fixed;
+	width: 100%;
+	max-width: 1280px;
+	font-size: clamp(1.2rem, 2vw, 2rem);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.3rem;
+	color: var(--light);
+	background-color: var(--main);
+	z-index: 100;
 }
 
 .nav-container {
-  display: flex;
+	display: flex;
 }
 
 .nav-container span {
-  margin-left: 1em;
-  color: var(--alert);
+	margin-left: 1em;
+	color: var(--alert);
 }
 
 #dark {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 /* Main */
 .main-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 92vh;
-  padding: 0 2rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 92vh;
+	padding: 0 2rem;
 }
 
 .text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.6;
-  text-align: center;
-  margin-bottom: 2rem;
-  padding: 0 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 1.6;
+	text-align: center;
+	margin-bottom: 2rem;
+	padding: 0 1rem;
 }
 
 .main-container h2 {
-  margin-top: 6rem;
-  margin-bottom: 2rem;
-  font-weight: 700;
-  font-size: 2rem;
-  color: var(--main);
+	margin-top: 6rem;
+	margin-bottom: 2rem;
+	font-weight: 700;
+	font-size: 2rem;
+	color: var(--main);
 }
 
 .container {
-  width: 80%;
-  min-height: 300px;
-  margin: 1rem auto;
-  border: 3px solid var(--main);
-  border-radius: 1rem;
-  box-shadow: 5px 5px 6px grey;
+	width: 80%;
+	min-height: 300px;
+	margin: 1rem auto;
+	border: 3px solid var(--main);
+	border-radius: 1rem;
+	box-shadow: 5px 5px 6px grey;
 }
 
 /* victor */
 .victor-container {
-  background-color: whitesmoke;
+	background-color: whitesmoke;
 }
 
 .victor-container .questions-container {
-  display: grid;
-  grid-template-columns: (1fr, 1fr, 1fr);
-  grid-template-rows: (1fr, 1fr, 1fr);
-  gap: 0.5rem;
-  padding: 1.5rem;
+	display: grid;
+	grid-template-columns: (1fr, 1fr, 1fr);
+	grid-template-rows: (1fr, 1fr, 1fr);
+	gap: 0.5rem;
+	padding: 1.5rem;
 }
 
 .victor-container .title {
-  grid-column-start: 1;
-  grid-column-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
 
-  grid-row-start: 1;
-  grid-row-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
 
-  height: 2rem;
+	height: 2rem;
 
-  font-size: 1.8rem;
-  text-align: center;
-  font-weight: 700;
-  margin: 0.5em auto;
-  color: var(--dark);
+	font-size: 1.8rem;
+	text-align: center;
+	font-weight: 700;
+	margin: 0.5em auto;
+	color: var(--dark);
 }
 
 .victor-container .quote-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 13rem;
-  background-color: lightblue;
-  border-radius: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 13rem;
+	background-color: lightblue;
+	border-radius: 0.5rem;
 
-  grid-column-start: 1;
-  grid-column-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
 
-  grid-row-start: 2;
-  grid-row-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
 
-  font-size: 2rem;
-  font-style: italic;
-  text-align: center;
-  padding: 0.5em 1em;
-  line-height: 1.6;
-  color: var(--dark);
+	font-size: 2rem;
+	font-style: italic;
+	text-align: center;
+	padding: 0.5em 1em;
+	line-height: 1.6;
+	color: var(--dark);
 }
 
 .victor-container .answers-container {
-  position: relative;
-  background-color: rgb(200, 200, 200);
-  border-radius: 0.5rem;
+	position: relative;
+	background-color: rgb(200, 200, 200);
+	border-radius: 0.5rem;
 
-  grid-column-start: 1;
-  grid-column-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
 
-  grid-row-start: 3;
-  grid-row-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 4;
 
-  min-height: 9rem;
+	min-height: 9rem;
 
-  padding: 0.8em 1em;
+	padding: 0.8em 1em;
 }
 
 .victor-container .answers-container legend {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .victor-container .answers-container li,
 .victor-container .answers-container legend {
-  margin: 0.5em 0;
+	margin: 0.5em 0;
 }
 .victor-container .button-container {
-  grid-column-start: 2;
-  grid-column-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
 
-  grid-row-start: 3;
-  grid-row-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 4;
 }
 
 .victor-container .button-container button {
-  position: absolute;
-  font-size: 1rem;
-  text-transform: uppercase;
-  bottom: 0.5rem;
-  right: 0.5rem;
-  padding: 0.3em 4em;
-  color: var(--light);
-  background-color: var(--main);
-  border-radius: 0.5em;
+	position: absolute;
+	font-size: 1rem;
+	text-transform: uppercase;
+	bottom: 0.5rem;
+	right: 0.5rem;
+	padding: 0.3em 4em;
+	color: var(--light);
+	background-color: var(--main);
+	border-radius: 0.5em;
 }
 
 #start-btn {
-  font-size: 1rem;
-  margin-top: 2rem;
-  text-transform: uppercase;
-  padding: 0.5em 4em;
-  color: var(--light);
-  background-color: var(--main);
-  border-radius: 0.5em;
+	font-size: 1rem;
+	margin-top: 2rem;
+	text-transform: uppercase;
+	padding: 0.5em 4em;
+	color: var(--light);
+	background-color: var(--main);
+	border-radius: 0.5em;
 }
 
 /* Table */
 .results-table tr,
 td,
 th {
-  font-size: clamp(1em, 1.8vw, 1.5em);
-  padding: 0.5em;
-  text-align: center;
-  border: 2px solid var(--table);
+	font-size: clamp(1em, 1.8vw, 1.5em);
+	padding: 0.5em;
+	text-align: center;
+	border: 2px solid var(--table);
 }
 
 .result-table th {
-  font-size: clamp(1em, 1.8vw, 1.5em);
-  font-weight: 700;
-  color: var(--light);
-  background-color: var(--main);
+	font-size: clamp(1em, 1.8vw, 1.5em);
+	font-weight: 700;
+	color: var(--light);
+	background-color: var(--main);
 }
 
 /* Footer */
 .footer-container {
-  width: 100%;
-  min-height: 5vh;
-  padding: 0.5rem 0;
-  color: var(--main);
-  background-color: var(--main);
+	width: 100%;
+	min-height: 5vh;
+	padding: 0.5rem 0;
+	color: var(--main);
+	background-color: var(--main);
 }
 
 p.footer {
-  font-size: clamp(1.2rem, 2vw, 1rem);
-  text-align: center;
-  color: var(--light);
-  line-height: 2em;
+	font-size: clamp(1.2rem, 2vw, 2rem);
+	text-align: center;
+	color: var(--light);
+	line-height: 2em;
 }

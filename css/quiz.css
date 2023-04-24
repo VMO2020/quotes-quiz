@@ -144,6 +144,7 @@ button:hover {
 }
 
 .victor-container .questions-container {
+	color: var(--dark);
 	display: grid;
 	grid-template-columns: (1fr, 1fr, 1fr);
 	grid-template-rows: (1fr, 1fr, 1fr);
@@ -236,6 +237,7 @@ button:hover {
 #start-btn {
 	font-size: 1rem;
 	margin-top: 2rem;
+	margin-bottom: 3rem;
 	text-transform: uppercase;
 	padding: 0.5em 4em;
 	color: var(--light);
@@ -244,6 +246,16 @@ button:hover {
 }
 
 /* Table */
+table {
+	border-collapse: collapse;
+}
+
+caption {
+	font-size: clamp(1.2rem, 2vw, 2rem);
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+}
+
 .results-medium tr,
 td,
 th {
@@ -251,6 +263,11 @@ th {
 	padding: 0.5em;
 	text-align: center;
 	border: 2px solid var(--medium);
+}
+
+th {
+	font-weight: 700;
+	background-color: var(--main-light);
 }
 
 .result-medium th {

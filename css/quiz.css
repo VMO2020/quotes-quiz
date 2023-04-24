@@ -4,13 +4,14 @@
 	--main: blue;
 	--dark: black;
 	--light: white;
+	--smoke: whitesmoke;
 	--alert: orange;
 	--html: rgb(28, 28, 28);
-	--table: grey;
+	--medium: grey;
+	--main-light: lightblue;
 }
 
 /* General */
-
 * {
 	box-sizing: border-box;
 }
@@ -33,6 +34,7 @@ body {
 }
 
 a {
+	font-size: clamp(0.8rem, 1.8vw, 1.6rem);
 	display: inline-block;
 	text-decoration: none;
 	color: inherit;
@@ -46,7 +48,11 @@ a {
 
 a:hover {
 	border: 2px solid var(--alert);
-	box-shadow: 3px 3px 4px grey;
+	box-shadow: 3px 3px 4px var(--medium);
+}
+
+#dark {
+	font-size: clamp(2rem, 3vw, 3rem);
 }
 
 .hidden {
@@ -59,7 +65,7 @@ button {
 }
 
 button:hover {
-	box-shadow: 5px 5px 6px grey;
+	box-shadow: 5px 5px 6px var(--medium);
 }
 
 /* Header */
@@ -71,7 +77,7 @@ button:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1.3rem;
+	padding: 0.5rem 1.3rem;
 	color: var(--light);
 	background-color: var(--main);
 	z-index: 100;
@@ -79,6 +85,10 @@ button:hover {
 
 .nav-container {
 	display: flex;
+}
+
+.logo {
+	font-size: clamp(2rem, 4vw, 4rem);
 }
 
 .nav-container span {
@@ -96,7 +106,7 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-height: 92vh;
+	min-height: 93vh;
 	padding: 0 2rem;
 }
 
@@ -125,12 +135,12 @@ button:hover {
 	margin: 1rem auto;
 	border: 3px solid var(--main);
 	border-radius: 1rem;
-	box-shadow: 5px 5px 6px grey;
+	box-shadow: 5px 5px 6px var(--medium);
 }
 
 /* victor */
 .victor-container {
-	background-color: whitesmoke;
+	background-color: var(--smoke);
 }
 
 .victor-container .questions-container {
@@ -162,7 +172,7 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 	min-height: 13rem;
-	background-color: lightblue;
+	background-color: var(--main-light);
 	border-radius: 0.5rem;
 
 	grid-column-start: 1;
@@ -234,16 +244,16 @@ button:hover {
 }
 
 /* Table */
-.results-table tr,
+.results-medium tr,
 td,
 th {
 	font-size: clamp(1em, 1.8vw, 1.5em);
 	padding: 0.5em;
 	text-align: center;
-	border: 2px solid var(--table);
+	border: 2px solid var(--medium);
 }
 
-.result-table th {
+.result-medium th {
 	font-size: clamp(1em, 1.8vw, 1.5em);
 	font-weight: 700;
 	color: var(--light);

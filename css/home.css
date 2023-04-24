@@ -8,7 +8,6 @@
 }
 
 /* General */
-
 * {
 	box-sizing: border-box;
 }
@@ -31,6 +30,7 @@ body {
 }
 
 a {
+	font-size: clamp(0.8rem, 1.8vw, 1.6rem);
 	display: inline-block;
 	text-decoration: none;
 	color: inherit;
@@ -47,6 +47,10 @@ a:hover {
 	box-shadow: 3px 3px 4px grey;
 }
 
+#dark {
+	font-size: clamp(2rem, 3vw, 3rem);
+}
+
 /* Header */
 .header-container {
 	position: fixed;
@@ -56,11 +60,16 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1.3rem;
+	padding: 0.5rem 1.3rem;
 	color: var(--light);
 	background-color: var(--main);
 	z-index: 100;
 }
+
+.logo {
+	font-size: clamp(2rem, 4vw, 4rem);
+}
+
 .nav-container {
 	display: flex;
 }

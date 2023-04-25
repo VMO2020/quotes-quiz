@@ -4,6 +4,7 @@
 	--dark: black;
 	--light: white;
 	--alert: orange;
+	--menu: rgb(215, 140, 0);
 	--html: rgb(28, 28, 28);
 }
 
@@ -40,6 +41,10 @@ a {
 	padding: 0.2em 1em;
 	border: 2px solid var(--light);
 	border-radius: 0.5em;
+}
+
+.current-page {
+	background-color: var(--menu);
 }
 
 a:hover {

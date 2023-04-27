@@ -35,7 +35,7 @@ body {
 }
 
 a {
-	font-size: clamp(0.8rem, 1.8vw, 1.6rem);
+	font-size: clamp(0.6rem, 1.8vw, 1.6rem);
 	display: inline-block;
 	text-decoration: none;
 	color: inherit;
@@ -296,4 +296,76 @@ p.footer {
 	text-align: center;
 	color: var(--light);
 	line-height: 2em;
+}
+
+@media ((max-width: 700px)) {
+	.logo {
+		margin-right: 1rem;
+		margin-left: 0;
+	}
+
+	a {
+		text-align: center;
+		padding: 0.35em;
+	}
+
+	.container {
+		width: 95%;
+	}
+
+	.main-container {
+		padding: 0;
+	}
+
+	.main-container h2 {
+		font-size: 1.8rem;
+	}
+
+	.victor-container .questions-container {
+		position: relative;
+		color: var(--dark);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0;
+	}
+
+	.victor-container .title {
+		height: 2rem;
+		font-size: 1.6rem;
+		text-align: center;
+	}
+
+	.victor-container .quote-container {
+		font-size: 1.2rem;
+		padding: 0.2em 1em;
+		line-height: 1.6;
+	}
+
+	.victor-container .answers-container {
+		width: 100%;
+		margin: 0;
+		background-color: rgb(200, 200, 200);
+		border-radius: 0.5rem;
+		min-height: 9rem;
+	}
+
+	.victor-container .button-container {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.victor-container .button-container button {
+		position: static;
+
+		font-size: 1rem;
+		text-transform: uppercase;
+		margin-top: 1rem;
+		padding: 0.3em 4em;
+		color: var(--light);
+		background-color: var(--main);
+		border-radius: 0.5em;
+	}
 }

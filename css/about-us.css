@@ -115,8 +115,9 @@ a:hover {
 .card {
 	width: 300px;
 	height: 450px;
+	cursor: pointer; 
+	/* 3D */
 	perspective: 1000px;
-	cursor: pointer;
 }
 
 /**************** Team Work ****************/
@@ -416,6 +417,7 @@ transform: rotateY(180deg);
 	border-radius: 8px;
 	text-align: center;
 	transition: transform 1s;
+	/* 3d */
 	transform-style: preserve-3d;
 }
 .victor-container .front-face {

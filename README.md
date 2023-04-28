@@ -1,24 +1,23 @@
-# quotes-quiz
+# Project: quotes-quiz
 
-Quotes quiz app
+## Wireframes
 
- daniel
+<p align="center">
+ <img src="./wireframes/HOME.jpeg" width="40%">
+ <img src="./wireframes/ABOUT.jpg" width="40%">
+</p>
+<p align="center">
+ <img src="./wireframes/QUIZ.jpg" width="40%">
+ <img src="./wireframes/RESULT.jpg" width="40%">
+</p>
 
-## This is Daniel
+## Final Project
 
-tunde
-
-## This is tunde
-
-## This is victor
-
-main
-
-## This is chidera
-
-chidera
- main
-
-## File Structure
-
-## This is Danielquilo
+<p align="center">
+ <img src="./images/Home.png" width="40%">
+ <img src="./images/About.png" width="40%">
+</p>
+<p align="center">
+ <img src="./images/Quiz.png" width="40%">
+ <img src="./images/Result.png" width="40%">
+</p>

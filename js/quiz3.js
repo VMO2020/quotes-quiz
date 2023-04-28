@@ -1,3 +1,4 @@
+'use strict';
 console.log('quiz3.js is working!');
 
 // *************************************** Questions ***************************************
@@ -82,7 +83,7 @@ generateQuestions();
 
 // ******************************************** DOM ********************************************
 // Selectors
-const container = document.getElementById('victor-container');
+const container = document.getElementById('tunde-container');
 const number = document.getElementById('title');
 const quote = document.getElementById('quote');
 const answer1Label = document.getElementById('answer1-label');
@@ -97,9 +98,10 @@ const answer4 = document.getElementById('answer4');
 const previousButton = document.getElementById('previous-btn');
 const submitButton = document.getElementById('next-btn');
 const startButton = document.getElementById('start-btn');
-
+const caption = document.getElementById('caption');
 const table = document.getElementById('tunde-results-table');
 const tableHeadTitle = document.getElementById('table-head');
+const tableBody = document.getElementById('table-body');
 
 const formValue = document.getElementById('form');
 
@@ -137,9 +139,9 @@ formValue.addEventListener('submit', function (event) {
 			mainQuiz();
 		} else {
 			console.log('You finished!');
-			console.log(answers);
-			console.log(answersCheck);
-			console.log(total);
+			// console.log(answers);
+			// console.log(answersCheck);
+			// console.log(total);
 			container.classList.add('hidden');
 			startButton.classList.remove('hidden');
 			tableHead();
@@ -202,12 +204,39 @@ startButton.addEventListener('click', function () {
 
 // ******************************  TABLE  ******************************
 
-const tableTitles = ['Quote', 'Answer', 'Check', 'Points'];
+const tableTitles = ['Quote', 'Answer', 'Check'];
 
 function tableHead() {
+	caption.innerHTML = `Result: ${total} out of ${maxQuestions} points`;
 	for (let i = 0; i < tableTitles.length; i++) {
 		const title = document.createElement('th');
 		title.textContent = tableTitles[i];
 		tableHeadTitle.appendChild(title);
+	}
+	for (let i = 0; i < questions.length; i++) {
+		// Rows
+		const row = document.createElement('tr');
+		tableBody.appendChild(row);
+
+		// Column1
+		const child1 = document.createElement('td');
+		child1.textContent = `"${questions[i].quote}"`;
+		row.appendChild(child1);
+
+		// Column2
+		const child2 = document.createElement('td');
+		child2.textContent = answers[i];
+		row.appendChild(child2);
+
+		// Column3
+		let check = true;
+		const child3 = document.createElement('td');
+		child3.style.color = 'green';
+		if (answersCheck[i] !== 1) {
+			check = false;
+			child3.style.color = 'red';
+		}
+		child3.textContent = check;
+		row.appendChild(child3);
 	}
 }

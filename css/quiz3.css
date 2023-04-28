@@ -144,15 +144,12 @@ button:hover {
 }
 
 /* victor */
-.tunde-container {
-	background-color: whitesmoke;
-	background-color: whitesmoke;
-	padding: 30px;
-	background-color: whitesmoke;
-	padding: 30px;
+.victor-container {
+	background-color: var(--smoke);
 }
 
-.tunde-container .tunde-questions-container {
+.victor-container .questions-container {
+	color: var(--dark);
 	display: grid;
 	grid-template-columns: (1fr, 1fr, 1fr);
 	grid-template-rows: (1fr, 1fr, 1fr);
@@ -160,7 +157,7 @@ button:hover {
 	padding: 1.5rem;
 }
 
-.tunde-container .title {
+.victor-container .title {
 	grid-column-start: 1;
 	grid-column-end: 3;
 
@@ -176,13 +173,12 @@ button:hover {
 	color: var(--dark);
 }
 
-.tunde-container .tunde-quote-container {
+.victor-container .quote-container {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	min-height: 13rem;
-	background-color: lightblue;
+	background-color: var(--main-light);
 	border-radius: 0.5rem;
 
 	grid-column-start: 1;
@@ -199,7 +195,7 @@ button:hover {
 	color: var(--dark);
 }
 
-.tunde-container .tunde-answers-container {
+.victor-container .answers-container {
 	position: relative;
 	background-color: rgb(200, 200, 200);
 	border-radius: 0.5rem;
@@ -215,15 +211,15 @@ button:hover {
 	padding: 0.8em 1em;
 }
 
-.tunde-container .tunde-answers-container legend {
+.victor-container .answers-container legend {
 	font-weight: 700;
 }
 
-.tunde-container .tunde-answers-container li,
-.tunde-container .tunde-answers-container legend {
+.victor-container .answers-container li,
+.victor-container .answers-container legend {
 	margin: 0.5em 0;
 }
-.tunde-container .tunde-button-container {
+.victor-container .button-container {
 	grid-column-start: 2;
 	grid-column-end: 3;
 
@@ -231,57 +227,16 @@ button:hover {
 	grid-row-end: 4;
 }
 
-.tunde-container .tunde-button-container button {
+.victor-container .button-container button {
 	position: absolute;
 	font-size: 1rem;
 	text-transform: uppercase;
 	bottom: 0.5rem;
-	margin-top: 1rem;
 	right: 0.5rem;
-	padding: 0.2em 3em;
+	padding: 0.3em 4em;
 	color: var(--light);
 	background-color: var(--main);
 	border-radius: 0.5em;
-}
-
-.tunde-container .previous-button-container button {
-	position: initial;
-	font-size: 1rem;
-	text-transform: uppercase;
-	bottom: 0.5rem;
-	margin-top: 1rem;
-	right: 0.5rem;
-	padding: 0.2em 3em;
-	color: var(--light);
-	background-color: var(--main);
-	border-radius: 0.5em;
-}
-
-#tunde-start-btn {
-	font-size: 1rem;
-	margin-top: 2rem;
-	text-transform: uppercase;
-	padding: 0.5em 4em;
-	color: var(--light);
-	background-color: var(--main);
-	border-radius: 0.5em;
-}
-
-/* Tunde's Table */
-.tunde-results-table tr,
-td,
-th {
-	font-size: clamp(1em, 1.8vw, 1.5em);
-	padding: 0.5em;
-	text-align: center;
-	border: 2px solid var(--table);
-}
-
-.tunde-results-table th {
-	font-size: clamp(1em, 1.8vw, 1.5em);
-	font-weight: 700;
-	color: var(--light);
-	background-color: var(--main);
 }
 
 #start-btn {
@@ -364,5 +319,53 @@ p.footer {
 
 	.main-container h2 {
 		font-size: 1.8rem;
+	}
+
+	.victor-container .questions-container {
+		position: relative;
+		color: var(--dark);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0;
+	}
+
+	.victor-container .title {
+		height: 2rem;
+		font-size: 1.6rem;
+		text-align: center;
+	}
+
+	.victor-container .quote-container {
+		font-size: 1.2rem;
+		padding: 0.2em 1em;
+		line-height: 1.6;
+	}
+
+	.victor-container .answers-container {
+		width: 100%;
+		margin: 0;
+		background-color: rgb(200, 200, 200);
+		border-radius: 0.5rem;
+		min-height: 9rem;
+	}
+
+	.victor-container .button-container {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.victor-container .button-container button {
+		position: static;
+
+		font-size: 1rem;
+		text-transform: uppercase;
+		margin-top: 1rem;
+		padding: 0.3em 4em;
+		color: var(--light);
+		background-color: var(--main);
+		border-radius: 0.5em;
 	}
 }

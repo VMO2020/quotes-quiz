@@ -1,5 +1,5 @@
 'use strict';
-console.log('quiz.js is working!');
+console.log('quiz2.js is working!');
 
 // *************************************** Questions ***************************************
 

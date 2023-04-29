@@ -95,11 +95,11 @@ const answer3 = document.getElementById('answer3');
 const answer4Label = document.getElementById('answer4-label');
 const answer4 = document.getElementById('answer4');
 
-const previousButton = document.getElementById('previous-btn');
+// const previousButton = document.getElementById('previous-btn');
 const submitButton = document.getElementById('next-btn');
 const startButton = document.getElementById('start-btn');
 const caption = document.getElementById('caption');
-const table = document.getElementById('tunde-results-table');
+const table = document.getElementById('results-table');
 const tableHeadTitle = document.getElementById('table-head');
 const tableBody = document.getElementById('table-body');
 
@@ -171,12 +171,12 @@ function renderFunction(i, question) {
 	answer4.setAttribute('value', question.authors[3]);
 }
 
-previousButton.addEventListener('click', function () {
-	if (count > 1) {
-		count = count - 1;
-		mainQuiz();
-	}
-});
+// previousButton.addEventListener('click', function () {
+// 	if (count > 1) {
+// 		count = count - 1;
+// 		mainQuiz();
+// 	}
+// });
 
 // Quiz main function
 function mainQuiz() {
@@ -194,6 +194,7 @@ startButton.addEventListener('click', function () {
 	answers = [];
 	answersCheck = [];
 	submitButton.innerHTML = 'Next';
+	table.innerHTML = '';
 });
 
 // previousBtn.addEventListener("click", function () {

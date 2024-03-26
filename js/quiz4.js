@@ -191,7 +191,7 @@ startButton.addEventListener('click', function () {
 
 // ******************************  TABLE  ******************************
 
-const tableTitles = ['Quote', 'Author', 'Check'];
+const tableTitles = ['Quote', 'Answer', 'Check'];
 
 function tableHead() {
 	caption.innerHTML = `Result: ${total} out of ${maxQuestions} points`;

@@ -139,11 +139,11 @@ button:hover {
 }
 
 .container {
-	width: 80%;
+	width: 90%;
 	min-height: 300px;
 	margin: 1rem auto;
-	border: 3px solid var(--main);
 	border-radius: 1rem;
+	border: 3px solid var(--main);
 	box-shadow: 5px 5px 6px var(--medium);
 }
 
@@ -285,6 +285,10 @@ caption {
 	margin-bottom: 1.5rem;
 }
 
+.results-table {
+	margin: 1em 0.3em;
+}
+
 .results-medium tr,
 td,
 th {
@@ -334,7 +338,7 @@ p.footer {
 	}
 
 	.container {
-		width: 95%;
+		width: 90%;
 	}
 
 	.main-container {

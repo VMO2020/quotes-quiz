@@ -15,14 +15,14 @@ const Question = function (quote, author, authors) {
 // Generate Questions
 function generateQuestions() {
 	let question1 = new Question(
-		'If you dont like something change it,if you cant change it change your attitude. Dont complain',
+		'If you dont like something change it,if you cant change it change your attitude. Do not complain',
 		'Maya Angelou',
 		['Albert Einstein', 'Maya Angelou', 'Bruce Lee', 'Elon Musk']
 	);
 	let question2 = new Question(
-		'You may not control all the events that happen to you,but you can decide not to be reduced by them.',
-		'Maya Angelou',
-		['Albert Einstein', 'Maya Angelou', 'Bruce Lee', 'Elon Musk']
+		'We cannot change anything until we accept it',
+		'Carl Jung',
+		['Albert Einstein', 'Carl Jung', 'Bruce Lee', 'Elon Musk']
 	);
 	let question3 = new Question(
 		'It always seems impossible until its done.',
@@ -30,17 +30,17 @@ function generateQuestions() {
 		['Albert Einstein', 'Jimi Hendrix', 'Elon Musk', 'Nelson Mandela']
 	);
 	let question4 = new Question(
-		'It is better to remain silent at the risk of being thougt a fool,than to talk and rrmove all doubt of it.',
+		'I never lose. I either win or I learn.',
 		'Nelson Mandela',
-		['Maurice Switzer ', 'Elon Musk', 'Muhammad Ali', 'Nelson Mandela']
+		['Maurice Switzer ', 'Nelson Mandela', 'Elon Musk', 'Muhammad Ali']
 	);
 	let question5 = new Question(
-		'Knowing yourself is the begining of all wisdon.',
+		'Knowing yourself is the beginning of all wisdom.',
 		'Aristotle',
 		['Steve Jobs', 'Elon Musk', 'Muhammad Ali', 'Aristotle']
 	);
 	let question6 = new Question(
-		'Count your age by friends,not years.Count your life by smiles not tears.',
+		'Count your age by friends, not years. Count your life by smiles not tears.',
 		'John Lennon',
 		['Muhammad Ali', 'Steve Jobs', 'John Lennon', 'Thomas Edison']
 	);
@@ -52,17 +52,17 @@ function generateQuestions() {
 	let question8 = new Question(
 		'The secret to life is to fall seven times and get up eight times.',
 		'Paul Coelho',
-		['Muhammad Ali', 'Steve Jobs', 'Paul Coelho', 'Winston Churchill']
+		['Muhammad Ali', 'Paul Coelho', 'Steve Jobs', 'Winston Churchill']
 	);
 	let question9 = new Question(
-		'Any fool can know,the point is to understand.',
-		'Albert Einstein',
-		['Thomas Edison', 'Mario Andretti', 'Albert Einstein', 'Winston Churchill']
+		'The things that have been most valuable to me I did not learn in school.',
+		'Will Smith',
+		['Thomas Edison', 'Mario Andretti', 'Will Smith', 'Winston Churchill']
 	);
 	let question10 = new Question(
 		'The only true wisdom is knowing you know nothing.',
 		'Socrates',
-		['Winston Churchill', 'Steve Jobs', 'Socrates', 'Warren Buffett']
+		['Socrates', 'Winston Churchill', 'Steve Jobs', 'Warren Buffett']
 	);
 	questions.push(
 		question1,

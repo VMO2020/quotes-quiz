@@ -15,19 +15,19 @@ const Question = function (quote, author, authors) {
 // Generate Questions
 function generateQuestions() {
 	let question1 = new Question(
-		"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dagma - which is living with the results of other people's thinking.",
-		'Steve Jobs',
-		['Steve Jobs', 'Elon Musk', 'John Lennon', 'Walt Disney']
+		"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+		'Albert Einstein',
+		['Steve Jobs', 'Elon Musk', 'Albert Einstein', 'Walt Disney']
 	);
 
 	let question2 = new Question(
-		'People who are right most of the time are people who change their minds often.',
-		'Jeff Bezos',
-		['Jeff Bezos', 'Elon Musk', 'John Lennon', 'Walt Disney']
+		'It is not what we say or think that defines us, it is what we do.',
+		'Jane Austen',
+		['Elon Musk', 'John Lennon', 'Jane Austen', 'Jeff Bezos']
 	);
 
 	let question3 = new Question(
-		'When something is import enough, you do it even if the odds are not in your favor',
+		'When something is import enough, you do it even if the odds are not in your favor.',
 		'Elon Musk',
 		['Elon Musk', 'Jeff Bezos', 'John Lennon', 'Walt Disney']
 	);
@@ -40,12 +40,14 @@ function generateQuestions() {
 
 	let question5 = new Question(
 		"Life is what happens when you're busy making other plans.",
-		'John Lennon'[('John Lennon', 'Elon Musk', 'Nelson Mandela', 'Walt Disney')]
+		'John Lennon',
+		['Elon Musk', 'Nelson Mandela', 'John Lennon', 'Walt Disney']
 	);
 
 	let question6 = new Question(
 		'Love the life you live. Live the life you love.',
-		'Bob Marley'[('Bob Marley', 'Elon Musk', 'Nelson Mandela', 'Steve Jobs')]
+		'Bob Marley',
+		['Bob Marley', 'Elon Musk', 'Nelson Mandela', 'Steve Jobs']
 	);
 
 	let question7 = new Question(
@@ -63,13 +65,13 @@ function generateQuestions() {
 	let question9 = new Question(
 		"Don't compare yourself with anyone in this world ... if you do so, you are insulting yourself.",
 		'Bill Gates',
-		['Bill Gates', 'Elon Musk', 'Nelson Mandela', 'Steve Jobs']
+		['Elon Musk', 'Nelson Mandela', 'Steve Jobs', 'Bill Gates']
 	);
 
 	let question10 = new Question(
 		'Never invest in a business you cannot understand.',
 		'Warren Buffett',
-		['Warren Buffett', 'Elon Musk', 'Nelson Mandela', 'Steve Jobs']
+		['Elon Musk', 'Warren Buffett', 'Nelson Mandela', 'Steve Jobs']
 	);
 
 	questions.push(

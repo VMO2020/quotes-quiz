@@ -15,7 +15,7 @@ const Question = function (quote, author, authors) {
 // Generate Questions
 function generateQuestions() {
 	let question1 = new Question(
-		' Success is not final, failure is not fatal: it is the courage to continue that counts.',
+		'If you are going through hell, keep going.',
 		'Winston Churchill',
 		['Albert Einstein', 'Abraham Lincoln', 'Bruce Lee', 'Winston Churchill']
 	);
@@ -50,7 +50,7 @@ function generateQuestions() {
 		['Muhammad Ali', 'Nelson Mandela', 'Will Smith', 'Chris Grosser']
 	);
 	let question8 = new Question(
-		'Strive not to be a success, rather to be of value.',
+		'Anyone who has never made a mistake has never tried anything new.',
 		'Albert Einstein',
 		['Albert Einstein', 'Steve Jobs', 'Will Smith', 'Winston Churchill']
 	);
